@@ -1,0 +1,37 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities
+
+@font-face {
+		/* Reference name */
+		font-family: 'Inconsolata';
+		/* For multiple files use commas, ex: url(), url(), ... */
+		src: url('/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf');
+}
+
+:root {
+	--theme-font-family-base: 'Inconsolata', sans-serif;
+	--theme-font-family-heading: 'Inconsolata', sans-serif;
+	/* ... */
+}
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+p {
+	@apply mt-5;
+}
+
+.codeblock-pre {
+    @apply max-h-96 overflow-y-scroll;
+    @apply bg-black;
+    @apply py-5;
+}
+.codeblock-pre::after{
+    @apply bg-black h-5;
+}
+
+.codeblock-pre::-webkit-scrollbar-track {
+  background: #000!important
+}
