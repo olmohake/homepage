@@ -11,6 +11,7 @@
 
 <div class="text-center mt-5">
   <h3 class="h3">Yannik Olmo Hake</h3>
+
   <a
     href="mailto:yannik.hake@gmail.com"
     class="btn btn-sm variant-filled-surface mt-5"
@@ -19,7 +20,7 @@
   >
   <button
     type="button"
-    class="btn btn-sm variant-filled-surface mt-5"
+    class="btn btn-sm variant-filled-surface mt-5 mx-1"
     on:click="{show}"
   >
     <Icon icon="ph:key-fill" class="inline text-warning-500 text-lg" />
